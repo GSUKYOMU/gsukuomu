@@ -3,11 +3,11 @@ body {
     font-family: 'Noto Sans KR', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    background-color: #D8D2CA;
 }
 header {
-    background-color: #003366;
-    color: white;
+    background-color: #662D91;
+    color: #FFFFFF;
     padding: 1rem;
     text-align: center;
 }
@@ -16,6 +16,8 @@ header input {
     padding: 0.5rem;
     width: 60%;
     font-size: 1rem;
+    border: 1px solid #777987;
+    border-radius: 5px;
 }
 main {
     display: flex;
@@ -24,16 +26,28 @@ main {
     padding: 2rem;
 }
 .card {
-    background-color: white;
-    border: 1px solid #ddd;
+    background-color: #FFFFFF;
+    border: 1px solid #777987;
     border-radius: 10px;
     padding: 2rem;
     margin: 1rem;
     width: 200px;
     text-align: center;
     cursor: pointer;
-    transition: box-shadow 0.3s ease;
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+    color: #000000;
 }
 .card:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px #777987;
+    transform: translateY(-5px);
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.logo {
+    height: 60px;
 }
